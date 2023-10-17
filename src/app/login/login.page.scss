@@ -1,0 +1,103 @@
+.contenedor-principal{
+    --ion-background-color:#1C2120 !important;
+}
+.ion-sin-borde{
+    text-align: left;
+}
+ion-title{
+    color:#ffffff;
+}
+ion-header{
+    position: absolute;
+}
+ion-toolbar{
+    --ion-background-color: trasparent;
+    --opacity:0;
+    .button-volver{
+        margin-right: 85%;
+        color:#ffffff;
+    }
+}
+
+ion-card{
+    --ion-background-color:#ffffff !important;
+    width:40%;
+    margin:0 auto;
+    margin-top: 10%;
+    
+    
+} 
+
+.inferior{
+    margin-top: 30px;
+    --ion-background-color:#ffffff !important;
+}
+.totalinferior{
+    background-color: #ffffff;   
+}
+
+ion-item{
+    --highlight-color-focused:#D1D0D1;
+    --padding-start:0;
+    --inner-padding-end:0;
+    font-size: 20px;
+    ion-input{
+        color:#D1D0D1;
+    }
+}
+
+.password-olvidado{
+    text-align: center;
+    ion-button{
+        font-size: 14px;
+    }
+}
+.contra-olvidada{
+    color: #000000;
+}
+.btn-wrap{
+    text-align: center;
+    padding-top: 30px;
+    
+    .btn-w{
+        --ion-color-primary:#302f30;
+        --ion-color-secondary:#000000;
+        
+    }
+}
+
+.text-tag{
+    margin-top:23%;
+    text-align: center;
+    span{
+        font-size: 25px;
+        font-weight: normal;
+        color:#1C2120;
+    }
+}
+.socialbtns{
+    text-align: center;
+    background-color:#D1D0D1;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 1.5vh;
+    ion-button{
+        width:40px;
+        padding-left: 5px !important;
+    }
+}
+.button-animacion{
+    text-align: center;
+    padding-top: 30px;
+    
+    .btn-a{
+        --ion-color-primary:#302f30;
+        --ion-color-secondary:#000000;
+        
+    }
+}
+
+
+
+
+

@@ -1,0 +1,44 @@
+<ion-header class="ion-sin-borde">
+  <ion-toolbar>
+    <ion-back-button class="button-volver" icon="chevron-back-circle" defaultHref="/" ></ion-back-button>
+    <!-- <ion-title>Registro</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contenedor-principal">
+  <ion-card >
+    <ion-img src="../../assets/icon/iconos.png" ></ion-img>        
+  </ion-card>
+  <ion-card-content>
+    <form class="inferior" [formGroup]="formularioLogin">
+    
+      <ion-item>
+        <ion-label position="floating" style="color:#ffffff; margin-bottom: 1%;"><ion-icon name="person" style="color:#ffffff"></ion-icon> Nombre de Usuario</ion-label> 
+              
+        <ion-input formControlName="usuario" type="text" name="usuario"  placeholder="Nombre de Usuario" style="background-color:#D1D0D1; border-radius:0.5vh; color: rgb(0, 0, 0);" required=""> </ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="floating" style="color:#ffffff; margin-bottom: 1%;"><ion-icon name="mail" style="color:#ffffff"></ion-icon> Correo</ion-label>        
+        <ion-input formControlName="correo" type="text" name="email"   placeholder="Correo" style="background-color:#D1D0D1; border-radius:0.5vh; color: rgb(0, 0, 0);" required=""></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="floating" style="color:#ffffff; margin-bottom: 1%;"><ion-icon name="lock-closed" style="color:#ffffff"></ion-icon> Contraseña</ion-label>    
+        <ion-input formControlName="contrasena" type="password" name="password" placeholder="**************"  style="background-color:#D1D0D1; border-radius:0.5vh; color: rgb(0, 0, 0);" required=""></ion-input>
+      </ion-item> 
+      <br>
+      <span style="color:#ffffff">Repetir contraseña:</span>
+      <ion-item>
+        <ion-label position="floating" style="color:#ffffff; margin-bottom: 1%;"><ion-icon name="lock-closed-outline" style="color:#ffffff"></ion-icon> Contraseña</ion-label>
+        <ion-input formControlName="repetir_contrasena" type="password" name="password" placeholder="**************"  style="background-color:#D1D0D1; border-radius:0.5vh; color: rgb(0, 0, 0);" required=""></ion-input>
+      </ion-item> 
+    </form> 
+    <div class="btn-wrap">
+      <ion-button (click)="registrar()" fill="solid"  class="btn-w" >Registrar</ion-button>
+    </div>
+  </ion-card-content>
+
+
+
+</ion-content>

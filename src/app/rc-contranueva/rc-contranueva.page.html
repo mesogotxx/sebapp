@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button class="button-volver" icon="chevron-back-circle" defaultHref="/" ></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contenedor-principal">
+  <ion-card >
+    <ion-img src="../../assets/icon/iconos.png" ></ion-img>        
+  </ion-card>
+  <br>
+  <ion-item>
+    <ion-label position="floating" style="color:#ffffff; margin-bottom: 1%;"><ion-icon name="lock-closed" style="color:#ffffff"></ion-icon>Nueva contraseña</ion-label>    
+    <ion-input type="password" name="password" placeholder="**************"  style="background-color:#D1D0D1; border-radius:0.5vh; color: rgb(0, 0, 0);" required></ion-input>
+  </ion-item>
+  <br>
+  <br>
+  <span style="color:#ffffff; margin-left: 10%; ">Repetir contraseña:</span>
+  <ion-item>
+    <ion-label position="floating" style="color:#ffffff; margin-bottom: 1%;"><ion-icon name="lock-closed-outline" style="color:#ffffff"></ion-icon> Nueva contraseña</ion-label>
+    <ion-input type="password" name="password" placeholder="**************"  style="background-color:#D1D0D1; border-radius:0.5vh; color: rgb(0, 0, 0);" required></ion-input>
+  </ion-item> 
+  <div class="btn-wrap">
+    <ion-button fill="solid"  routerLink="/login" class="btn-w" >Restablecer</ion-button>
+  </div>
+</ion-content>

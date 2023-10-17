@@ -1,0 +1,58 @@
+ion-toolbar{
+    --ion-background-color: trasparent;
+    --opacity:0;
+    .button-volver{
+        margin-right: 85%;
+        color:#ffffff;
+    }
+}
+
+.contenedor-principal{
+    --ion-background-color:#1C2120 !important;
+}
+
+ion-header{
+    position: absolute;
+}
+
+ion-card{
+    --ion-background-color:#ffffff !important;
+    width:40%;
+    margin:0 auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    
+} 
+
+.subtitulo{
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ion-item{
+    --highlight-color-focused:#D1D0D1;
+    --padding-start:0;
+    --inner-padding-end:0;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    ion-input{
+        
+        color:#D1D0D1;
+        background-color: #D1D0D1;
+    }
+}
+.btn-wrap{
+    text-align: center;
+    padding-top: 30px;
+    color: #000000;
+    .btn-w{
+        --ion-color-primary:#b8b8b8;
+        color: #000000;
+        
+    }
+}

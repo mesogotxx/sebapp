@@ -1,0 +1,61 @@
+<ion-header class="ion-sin-borde">
+  <ion-toolbar>
+     <ion-back-button class="button-volver" icon="chevron-back-circle" defaultHref="/inicio" ></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="contenedor-principal">
+  <ion-card>
+    <ion-img src="../../assets/icon/icons8-usuario-50.png"></ion-img>
+  </ion-card>
+  <div class="button-animacion">
+  <ion-button class="btn-a"(click)="play()">Mover</ion-button>
+  <ion-button class="btn-a" (click)="pause()">Pausa</ion-button>
+  <ion-button class="btn-a" (click)="stop()">Parar</ion-button>
+  </div>
+  <div class="totalinferior">
+    <ion-card-content>
+      <form class="inferior" [formGroup]="formularioLogin">
+        <ion-item>
+          <ion-icon name="person" style="color:#000000"></ion-icon>
+          <ion-input formControlName="usuario" type="text" name="email" placeholder="Usuario/Correo"
+            style="background-color:#D1D0D1; border-radius:0.5vh; color: rgb(0, 0, 0); " required></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-icon name="lock-closed-outline" style="color:#000000"></ion-icon>
+          <ion-input formControlName="contrasena" type="password" name="password" placeholder="**************"
+            style="background-color:#D1D0D1; border-radius:0.5vh; color: rgb(0, 0, 0);" required></ion-input>
+        </ion-item>
+      </form>
+      <div class="btn-wrap">
+        <ion-button fill="solid" class="btn-w" (click)="ingresar()">Ingresar</ion-button>
+      </div>
+      <div class="password-olvidado">
+        <ion-button fill="clear" class="contra-olvidada" routerLink="/restablecercontrasenia">olvidaste tu contraseña?,<br>Presiona aquí para
+          restablecerla!.</ion-button>
+      </div>
+
+
+      <div class="text-tag">
+        <span>ingresa con tu red social!.</span>
+      </div>
+      <div class="socialbtns">
+        <ion-button fill="clear" href="https://es-la.facebook.com/" class="facebtn ion-no-padding">
+          <ion-img src="../../assets/icon/icons8-facebook-48.png"></ion-img>
+        </ion-button>
+        <ion-button fill="clear" href="https://twitter.com/?lang=es" class="facebtn ion-no-padding">
+          <ion-img src="../../assets/icon/icons8-twitterx-50.png"></ion-img>
+        </ion-button>
+        <ion-button fill="clear" href="https://www.instagram.com/" class="facebtn ion-no-padding">
+          <ion-img src="../../assets/icon/icons8-instagram-48.png"></ion-img>
+        </ion-button>
+      </div>
+    
+    
+    
+
+    </ion-card-content>
+  </div>
+</ion-content>

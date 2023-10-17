@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngIf="alumno">
+    <ion-card>
+      <ion-card-content class="ion-text-center">
+        <img src="{{ alumno.picture.medium }}">
+        <h1>{{ alumno.name.first }} {{ alumno.name.last }}</h1>
+        <p>Email: {{ alumno.email }}</p>
+        <p>Edad: {{ alumno.dob.age }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

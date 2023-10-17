@@ -1,0 +1,7 @@
+{
+  "name": "sebapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
