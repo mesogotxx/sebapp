@@ -1,10 +1,25 @@
-.btn-wrap{
+ion-content {
+    text-align: center;
+  }
+  
+  .btn-wrap {
     text-align: center;
     padding-top: 30px;
-    
-    .btn-w{
-        --ion-color-primary:#302f30;
-        --ion-color-secondary:#000000;
-        
+  
+    .btn-w {
+      --ion-color-primary: #302f30;
+      --ion-color-secondary: #000000;
     }
-}
+  }
+  
+  .qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  qrcode {
+    max-width: 50%;
+    margin-right: 20%;
+  }

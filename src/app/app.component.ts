@@ -22,7 +22,7 @@ export class AppComponent {
   compartirApp() {
     Share.share({
       title:'Compartir myApp',
-      url:'https://bilbaolabs.cl/descarga',
+      url:'https://usuario15.talleresmelipilla.cl/',
       dialogTitle:'Es perfecta!',
     })
   }
